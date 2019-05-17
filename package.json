@@ -1,0 +1,30 @@
+{
+  "name": "micro-apps-gql-stitcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run-books-server": "node ./src/microservices/books/index.ts",
+    "run-tracks-server": "node ./src/microservices/tracks/index.ts",
+    "run-microservices": "npm run run-books-server && npm run run-tracks-server",
+    "run-stitcher": "node ./src/stitcher/index.ts",
+    "format": "prettier --write",
+    "tsc": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-link-http": "^1.5.14",
+    "apollo-server": "^2.5.0",
+    "graphql": "^14.3.0",
+    "graphql-tools": "^4.0.4",
+    "node-fetch": "^2.6.0",
+    "typescript": "^3.4.5"
+  },
+  "devDependencies": {
+    "husky": "^2.3.0",
+    "precise-commits": "^1.0.2",
+    "prettier": "^1.17.1"
+  }
+}
