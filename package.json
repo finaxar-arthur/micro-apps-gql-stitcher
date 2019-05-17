@@ -1,0 +1,35 @@
+{
+  "name": "micro-apps-gql-stitcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "precise-commits": "precise-commits",
+    "precommit": "npm run precise-commits",
+    "microservice-books": "node ./dist/microservices/books",
+    "microservice-tracks": "node ./dist/microservices/tracks",
+    "format": "prettier --write",
+    "tsc": "tsc",
+    "start": "concurrently \"tsc --watch\" \"nodemon dist --watch\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-link-http": "^1.5.14",
+    "apollo-server": "^2.5.0",
+    "graphql": "^14.3.0",
+    "graphql-tools": "^4.0.4",
+    "node-fetch": "^2.6.0",
+    "typescript": "^3.4.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.5",
+    "@types/express": "^4.16.1",
+    "@types/graphql": "^14.2.0",
+    "husky": "^2.3.0",
+    "nodemon": "^1.19.0",
+    "precise-commits": "^1.0.2",
+    "prettier": "^1.17.1"
+  }
+}
