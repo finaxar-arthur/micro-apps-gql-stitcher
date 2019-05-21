@@ -10,7 +10,8 @@
     "microservice-tracks": "node ./dist/microservices/tracks",
     "format": "prettier --write",
     "tsc": "tsc",
-    "start": "concurrently \"tsc --watch\" \"nodemon dist --watch\""
+    "tsc-watch": "tsc --watch",
+    "start": "nodemon dist --watch"
   },
   "keywords": [],
   "author": "",

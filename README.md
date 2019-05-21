@@ -4,6 +4,12 @@ This is an exploratory project to simulate how to stitch different GraphQL servi
 
 ## Local development
 
+Do this in order
+
+### Run Typescript
+
+`yarn tsc-watch`
+
 ### Running the microservices GraphQL servers
 
 **Books**
